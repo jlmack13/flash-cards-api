@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+#Create a test deck
+Deck.create(name: "Technical Interview: JavaScript", description: "Prepare for your JavaScript Technical interview with these cards.", public: false)
+#Create cards for the first test deck
+Card.create(term: "Hoisting", definition: "Hoisting is JavaScript's default behavior of moving declarations to the top.", deck_id: 1)
+Card.create(term: "Promises", definition: "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.", deck_id: 1)

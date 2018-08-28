@@ -12,3 +12,4 @@ Deck.create(name: "Technical Interview: JavaScript", description: "Prepare for y
 #Create cards for the first test deck
 Card.create(term: "Hoisting", definition: "Hoisting is JavaScript's default behavior of moving declarations to the top.", deck_id: 1)
 Card.create(term: "Promises", definition: "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.", deck_id: 1)
+Card.create(term: "IIFE", definition: "Immediately invoked function expression. A JS function that runs as soon as it is defined.", deck_id: 1)

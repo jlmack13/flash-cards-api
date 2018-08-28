@@ -9,6 +9,11 @@ class Api::DecksController < ApplicationController
 
     def create
         deck = Deck.new(deck_params)
+        if deck.save
+            render json: deck
+        else
+            render json: { message: deck.errors }, status: 400
+        end
     end
 
     private

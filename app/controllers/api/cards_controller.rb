@@ -10,7 +10,9 @@ class Api::CardsController < ApplicationController
     def create
         card = Card.new(card_params)
         if card.save
-            render json:
+            render json: card
+        else
+            render json: { message: card.errors }, status: 400
         end
     end
 

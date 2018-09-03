@@ -13,3 +13,4 @@ Deck.create(name: "Technical Interview: JavaScript", description: "Prepare for y
 Card.create(term: "Hoisting", definition: "Hoisting is JavaScript's default behavior of moving declarations to the top.", deck_id: 1)
 Card.create(term: "Promises", definition: "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.", deck_id: 1)
 Card.create(term: "IIFE", definition: "Immediately invoked function expression. A JS function that runs as soon as it is defined.", deck_id: 1)
+Card.create(term: "What is the difference between 'undefined' and 'not defined' in JavaScript?", definition: "If a variable is declared but not defined it is 'undefined' if it is neither declared nor defined it is 'not defined'", deck_id: 1)

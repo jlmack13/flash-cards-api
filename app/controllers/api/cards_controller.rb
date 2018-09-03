@@ -1,4 +1,5 @@
 class Api::CardsController < ApplicationController
+    #need a before action here for show, edit, and delete
     def index
         render json: Card.all
     end
@@ -17,6 +18,9 @@ class Api::CardsController < ApplicationController
     end
 
     private
+    def set_card
+        #find the card by the id here
+    end
 
     def card_params
         params.require(:card).permit(:term, :definition, :deck_id)
